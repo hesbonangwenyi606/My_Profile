@@ -1,1 +1,1 @@
-/home/hesbon/Donwloaded picture__123
+https://www.facebook.com/photo/?fbid=1192185995488732&set=a.103482654359077&__cft__[0]=AZXVmt4g4RoisvFStAlqzyvzgRO_0G_XBwnTHhCYcwTQcwmN5XhFvBLx_50baNLYWsivZPF70KwnVNd9Bciiqc0mROTjrLg4i9735pJjWymG4ELjy-V18e_9kOKWFI_xm7S1TxSNRLT4hDafqLUOQ_QqHCTjnTOP4n5ZloJOwEmBZA&__tn__=~H-R

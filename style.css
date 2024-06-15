@@ -1,28 +1,33 @@
 css
 Copy code
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
 .profile-container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    border: 1px solid #ccc;
+    background-color: #fff; /* White background for profile content */
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    background-image: url('https://www.facebook.com/photo/?fbid=1106575354049797&set=a.952225672818100');
-    background-size: cover;
-    background-position: center;
-    color: #333;
+    border-radius: 5px;
+    overflow: hidden; /* Ensures the container wraps around floated elements */
+    background-image: url('https://www.facebook.com/photo/?fbid=1192185995488732&set=a.103482654359077');
+    background-size: cover; /* Adjusts the image size to cover the entire container */
+    background-position: center; /* Centers the image within the container */
+    color: #333; /* Default text color */
 }
 
 header {
     text-align: center;
     margin-bottom: 20px;
-    color: white; /* Ensures text is readable on the background */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.7); /* Adds shadow to text for better visibility */
 }
 
 .contact-info, .professional-summary, .education, .technical-skills, .projects {
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for readability */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for sections */
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
