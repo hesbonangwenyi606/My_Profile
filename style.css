@@ -1,0 +1,60 @@
+css
+Copy code
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-image: url('https://www.facebook.com/photo/?fbid=1106575354049797&set=a.952225672818100');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; /* Ensures text is readable on the background */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7); /* Adds shadow to text for better visibility */
+}
+
+.contact-info, .professional-summary, .education, .technical-skills, .projects {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for readability */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.contact-info h2, .professional-summary h2, .education h2, .technical-skills h2, .projects h2 {
+    margin-top: 0;
+}
+
+.projects .project {
+    margin-bottom: 20px;
+}
+
+.projects .project h3 {
+    margin-top: 0;
+}
+
+.projects .project p {
+    margin-bottom: 10px;
+}
+
+.technical-skills ul {
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.technical-skills li {
+    list-style-type: none;
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        padding: 10px;
+    }
+}
