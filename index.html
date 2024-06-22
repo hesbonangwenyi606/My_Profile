@@ -7,102 +7,174 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      color: #333;
       margin: 0;
       padding: 0;
-      background-image: url('https://d41chssnpqdne.cloudfront.net/user_upload_by_module/chat_bot/files/19232216/QBKtdciowFulOWAl?Expires=1719656039&Signature=NxjL0VBs1vcq-GpbPcdjTEx1WFqv4JSwYOWULOEkLABdyaKlPlJVhEVJhscmPM~42nlul1iooSxjjer8MawIACsksn5rhx9nOmhUGhyHRO-jAm8kEcFseRgNI-59kR9kbGRApsdcmeuk4ix6lu6RhwHTSjyqnvZBylwSYMZ36xXEHWWdmvDzG~LBZT7dAcs5YrE~TthUMSPVFL6OY4ZLhl5S3tVploerg6LacErvdY3kcLxnWV4axqqJgCvOL7A5rAyBtSsNWcAAr~AY~QM9He89GPEjvsV8Kw9uk2DyhRsIo--gmkxjofMiNkKsS5YGZC4n0mXpbB4NlF-hlrIjwQ__&Key-Pair-Id=K3USGZIKWMDCSX');
-      background-size: 50%; /* Adjust the size of the background image */
-      background-position: center;
-      height: 100vh; /* Full height of viewport */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      background-color: #f0f0f0; /* Light gray background */
     }
 
-    .container {
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .profile-container {
       max-width: 800px;
-      margin: auto; /* Center align container */
-      margin-top: 20px; /* Add some space at the top */
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff; /* White background for profile content */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      overflow: hidden; /* Ensures the container wraps around floated elements */
+      color: #333; /* Default text color */
     }
 
-    h1, h2 {
+    header {
+      text-align: center;
       margin-bottom: 20px;
     }
 
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 20px; /* Add some space at the top of the images */
+    .contact-info, .professional-summary, .education, .technical-skills, .projects {
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for sections */
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
     }
 
-    footer {
-      margin-top: 20px;
-      padding: 10px;
-      text-align: center;
+    .contact-info h2, .professional-summary h2, .education h2, .technical-skills h2, .projects h2 {
+      margin-top: 0;
+    }
+
+    .projects .project {
+      margin-bottom: 20px;
+    }
+
+    .projects .project h3 {
+      margin-top: 0;
+    }
+
+    .projects .project p {
+      margin-bottom: 10px;
+    }
+
+    .technical-skills {
+      margin-bottom: 20px;
+    }
+
+    .skill {
+      margin-bottom: 10px;
+    }
+
+    .skill-name {
+      margin-bottom: 5px;
+    }
+
+    .bar-container {
       background-color: #f0f0f0;
-      border-top: 1px solid #ccc;
+      height: 20px;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      overflow: hidden;
     }
 
-    .project-links {
-      margin-top: 20px;
+    .bar {
+      height: 100%;
     }
 
-    .project-links h2 {
-      margin-bottom: 10px;
+    .bar-java { 
+      width: 40%; 
+      background-color: #007bff; /* Blue color for bars */
+    }
+    .bar-python { 
+      width: 60%; 
+      background-color: #007bff; /* Blue color for bars */
+    }
+    .bar-javascript { width: 80%; background-color: #007bff; }
+    .bar-react { width: 75%; background-color: #007bff; }
+    .bar-database { width: 85%; background-color: #007bff; }
+    .bar-agile { width: 80%; background-color: #007bff; }
+
+    .technical-skills h2 {
+      color: red; /* Red color for Backend title */
     }
 
-    .project-links ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .project-links li {
-      margin-bottom: 10px;
-    }
-
-    .project-links a {
-      color: #007bff; /* Blue color for links */
-      text-decoration: none;
-    }
-
-    .project-links a:hover {
-      text-decoration: underline;
+    @media (max-width: 600px) {
+      .profile-container {
+        padding: 10px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Hesbon M. Angwenyi - Software Developer</h1>
-  
-    <h2>Introduction</h2>
-    <p>Hello, I'm Hesbon M. Angwenyi, a recent graduate from Moringa School's Software Development Certificate program. I specialize in both backend (Java, Python) and frontend (JavaScript, React) development, with hands-on experience in building applications like a secure Bank Application, user-friendly Ecommerce websites using React, and an efficient event planner. Passionate about leveraging technology to drive business growth and enhance user experiences, I'm eager to contribute my skills to innovative software projects.</p>
-  
-    <h2>Experience</h2>
-    <p>As a recent graduate from Moringa School's rigorous Software Development Certificate program, I have acquired practical skills in backend and frontend development. During my training, I successfully built and deployed several projects, including a secure Bank Application using Java, a dynamic Ecommerce platform utilizing React and JavaScript, and an intuitive event planner with Python backend integration. These experiences have equipped me with hands-on expertise in software development methodologies, database management, and creating scalable solutions. I am adept at collaborating within agile teams to deliver high-quality software that meets client needs and enhances user experiences. My dedication to continuous learning and problem-solving allows me to tackle complex challenges with creativity and precision.</p>
-  
-    <div class="project-links">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <p>The ShopSavvyHub Ecommerce Website is a dynamic and user-friendly platform designed to provide a seamless shopping experience. Built with React for the frontend and powered by a robust Java backend, this project features a responsive design, intuitive navigation, and secure payment integration. Key functionalities include product browsing, a searchable catalog, user authentication, and an efficient checkout process. The website aims to enhance the online shopping experience by offering a reliable and efficient platform for both consumers and vendors.</p>
-          <img src="Screenshot1.png" alt="Product Page Screenshot">
-          <img src="Screenshot2.png" alt="Product Detail Screenshot">
-          <p>Project 1: <a href="https://github.com/Ndungu-Muigai/ShopSavvyHub-ecommerce-site.git" target="_blank">GitHub Link</a> and <a href="https://shopsavvy-ecommerce-site.netlify.app/" target="_blank">Live Demo</a></p>
-        </li>
-      </ul>
-    </div>
-  
-    <h2>Contact</h2>
-    <p>You can reach me via email at <a href="mailto:hesbonmanyinsa96@gmail.com">hesbonmanyinsa96@gmail.com</a>, phone at <a href="tel:+254743573380">+254743573380</a>, or connect with me on <a href="https://www.linkedin.com/in/hesbon-angwenyi-58b9412b4">LinkedIn</a>. I am enthusiastic about discussing new opportunities and collaborations.</p>
-  </div>
+  <div class="profile-container">
+    <header>
+      <h1>Hesbon M. Angwenyi - Software Developer</h1>
+    </header>
 
-  <footer>
-    &copy; 2024 Hesbon M. Angwenyi. All rights reserved.
-  </footer>
+    <section class="professional-summary">
+      <h2>Professional Summary</h2>
+      <p>Hello, I'm Hesbon M. Angwenyi, a recent graduate from Moringa School's Software Development Certificate program. I specialize in both backend (Java, Python) and frontend (JavaScript, React) development. With hands-on experience in building applications like a secure Bank Application, user-friendly Ecommerce websites using React, and an efficient event planner, I am passionate about leveraging technology to drive business growth and enhance user experiences. I thrive in collaborative environments, consistently applying my problem-solving skills and attention to detail to deliver high-quality software solutions.</p>
+      <p>Throughout my education and professional projects, I have developed a strong foundation in software development principles and best practices. My approach to development emphasizes clean code, robust architecture, and scalable solutions. I am eager to contribute my skills to innovative software projects and am continuously seeking opportunities to learn and grow in this ever-evolving field.</p>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>ShopSavvyHub Ecommerce Website</h3>
+        <p>The ShopSavvyHub Ecommerce Website is a dynamic and user-friendly platform designed to provide a seamless shopping experience. This project involved developing a responsive front-end using React and integrating it with a robust back-end to handle user authentication, product management, and order processing. Key features include a search functionality, product filtering, user reviews, and a secure checkout process. This project highlights my ability to build full-stack applications and deliver a comprehensive e-commerce solution.</p>
+        <p><a href="https://github.com/Ndungu-Muigai/ShopSavvyHub-ecommerce-site.git" target="_blank">GitHub Link</a> | <a href="https://shopsavvy-ecommerce-site.netlify.app/" target="_blank">Live Demo</a></p>
+      </div>
+      <div class="project">
+        <h3>Secure Bank Application</h3>
+        <p>This project involved developing a secure banking application using Java for the backend and Angular for the front end. The application provides features such as user authentication, account management, transaction history, and secure fund transfers. I implemented robust security measures, including encryption and multi-factor authentication, to ensure the safety of user data. This project demonstrates my proficiency in backend development with Java and my commitment to building secure, reliable applications.</p>
+        <p><a href="https://github.com/HesbonManyinsa/SecureBankApp.git" target="_blank">GitHub Link</a></p>
+      </div>
+      <div class="project">
+        <h3>Event Planner Application</h3>
+        <p>The Event Planner Application is designed to help users organize and manage events efficiently. Developed using Python and Django for the backend, and React for the front end, this application offers features such as event scheduling, participant management, and notifications. It also includes a calendar view for easy event tracking and management. This project showcases my ability to integrate frontend and backend technologies to create cohesive and functional applications.</p>
+        <p><a href="https://github.com/HesbonManyinsa/EventPlannerApp.git" target="_blank">GitHub Link</a></p>
+      </div>
+    </section>
+
+    <section class="technical-skills">
+      <h2>Backend</h2>
+      <div class="skill">
+        <div class="skill-name">Java</div>
+        <div class="bar-container">
+          <div class="bar bar-java"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Python</div>
+        <div class="bar-container">
+          <div class="bar bar-python"></div>
+        </div>
+      </div>
+      <h2>Frontend</h2>
+      <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="bar-container">
+          <div class="bar bar-javascript"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">React</div>
+        <div class="bar-container">
+          <div class="bar bar-react"></div>
+        </div>
+      </div>
+      <h2>Database Management</h2>
+      <div class="skill">
+        <div class="bar-container">
+          <div class="bar bar-database"></div>
+        </div>
+      </div>
+      <h2>Agile Software Development</h2>
+      <div class="skill">
+        <div class="bar-container">
+          <div class="bar bar-agile"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p>You can reach me via email at <a href="mailto:hesbonmanyinsa96@gmail.com">hesbonmanyinsa96@gmail.com</a>, phone at <a href="tel:+254743573380">+254743573380</a>, or connect with me on <a href="https://www.linkedin.com/in/hesbon-angwenyi-58b9412b4">LinkedIn</a>. I am enthusiastic about discussing new opportunities and collaborations. Whether you're interested in hiring me for a position, collaborating on a project, or simply want to network, feel free to reach out. I'm always open to making new professional connections and exploring how we can work together to achieve great things.</p>
+    </section>
+  </div>
 </body>
 </html>
