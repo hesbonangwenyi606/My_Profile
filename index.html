@@ -1,180 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hesbon M. Angwenyi - Software Developer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0; /* Light gray background */
-    }
-
-    .profile-container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff; /* White background for profile content */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-      overflow: hidden; /* Ensures the container wraps around floated elements */
-      color: #333; /* Default text color */
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .contact-info, .professional-summary, .education, .technical-skills, .projects {
-      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for sections */
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-    }
-
-    .contact-info h2, .professional-summary h2, .education h2, .technical-skills h2, .projects h2 {
-      margin-top: 0;
-    }
-
-    .projects .project {
-      margin-bottom: 20px;
-    }
-
-    .projects .project h3 {
-      margin-top: 0;
-    }
-
-    .projects .project p {
-      margin-bottom: 10px;
-    }
-
-    .technical-skills {
-      margin-bottom: 20px;
-    }
-
-    .skill {
-      margin-bottom: 10px;
-    }
-
-    .skill-name {
-      margin-bottom: 5px;
-    }
-
-    .bar-container {
-      background-color: #f0f0f0;
-      height: 20px;
-      border-radius: 5px;
-      margin-bottom: 5px;
-      overflow: hidden;
-    }
-
-    .bar {
-      height: 100%;
-    }
-
-    .bar-java { 
-      width: 40%; 
-      background-color: #007bff; /* Blue color for bars */
-    }
-    .bar-python { 
-      width: 60%; 
-      background-color: #007bff; /* Blue color for bars */
-    }
-    .bar-javascript { width: 80%; background-color: #007bff; }
-    .bar-react { width: 75%; background-color: #007bff; }
-    .bar-database { width: 85%; background-color: #007bff; }
-    .bar-agile { width: 80%; background-color: #007bff; }
-
-    .technical-skills h2 {
-      color: red; /* Red color for Backend title */
-    }
-
-    @media (max-width: 600px) {
-      .profile-container {
-        padding: 10px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesbon Angwenyi - Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        p, li {
+            color: #2c3e50;
+            font-size: 16px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .skills-category {
+            margin-bottom: 20px;
+        }
+        .skills-category h3 {
+            color: #3498db;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .skills-category ul {
+            padding: 0;
+        }
+        .skills-category ul li {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+        .skills-bar {
+            flex-grow: 1;
+            margin-left: 10px;
+            background-color: #3498db;
+            position: relative;
+            height: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .skills-bar span {
+            display: block;
+            height: 100%;
+            border-radius: 5px;
+            background-color: rgba(52, 152, 219, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: width 0.6s ease;
+        }
+        .skills-bar span::after {
+            content: attr(data-percent);
+            position: absolute;
+            right: -30px;
+            top: 0;
+            color: #2c3e50;
+        }
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .section-content {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .section-content ul {
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
-  <div class="profile-container">
-    <header>
-      <h1>Hesbon M. Angwenyi - Software Developer</h1>
-    </header>
-
-    <section class="professional-summary">
-      <h2>Professional Summary</h2>
-      <p>Hello, I'm Hesbon M. Angwenyi, a recent graduate from Moringa School's Software Development Certificate program. I specialize in both backend (Java, Python) and frontend (JavaScript, React) development. With hands-on experience in building applications like a secure Bank Application, user-friendly Ecommerce websites using React, and an efficient event planner, I am passionate about leveraging technology to drive business growth and enhance user experiences. I thrive in collaborative environments, consistently applying my problem-solving skills and attention to detail to deliver high-quality software solutions.</p>
-      <p>Throughout my education and professional projects, I have developed a strong foundation in software development principles and best practices. My approach to development emphasizes clean code, robust architecture, and scalable solutions. I am eager to contribute my skills to innovative software projects and am continuously seeking opportunities to learn and grow in this ever-evolving field.</p>
-    </section>
-
-    <section class="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>ShopSavvyHub Ecommerce Website</h3>
-        <p>The ShopSavvyHub Ecommerce Website is a dynamic and user-friendly platform designed to provide a seamless shopping experience. This project involved developing a responsive front-end using React and integrating it with a robust back-end to handle user authentication, product management, and order processing. Key features include a search functionality, product filtering, user reviews, and a secure checkout process. This project highlights my ability to build full-stack applications and deliver a comprehensive e-commerce solution.</p>
-        <p><a href="https://github.com/Ndungu-Muigai/ShopSavvyHub-ecommerce-site.git" target="_blank">GitHub Link</a> | <a href="https://shopsavvy-ecommerce-site.netlify.app/" target="_blank">Live Demo</a></p>
-      </div>
-      <div class="project">
-        <h3>Secure Bank Application</h3>
-        <p>This project involved developing a secure banking application using Java for the backend and Angular for the front end. The application provides features such as user authentication, account management, transaction history, and secure fund transfers. I implemented robust security measures, including encryption and multi-factor authentication, to ensure the safety of user data. This project demonstrates my proficiency in backend development with Java and my commitment to building secure, reliable applications.</p>
-        <p><a href="https://github.com/HesbonManyinsa/SecureBankApp.git" target="_blank">GitHub Link</a></p>
-      </div>
-      <div class="project">
-        <h3>Event Planner Application</h3>
-        <p>The Event Planner Application is designed to help users organize and manage events efficiently. Developed using Python and Django for the backend, and React for the front end, this application offers features such as event scheduling, participant management, and notifications. It also includes a calendar view for easy event tracking and management. This project showcases my ability to integrate frontend and backend technologies to create cohesive and functional applications.</p>
-        <p><a href="https://github.com/HesbonManyinsa/EventPlannerApp.git" target="_blank">GitHub Link</a></p>
-      </div>
-    </section>
-
-    <section class="technical-skills">
-      <h2>Backend</h2>
-      <div class="skill">
-        <div class="skill-name">Java</div>
-        <div class="bar-container">
-          <div class="bar bar-java"></div>
+    <div class="container">
+        <h1>Hesbon Angwenyi</h1>
+        <h2>Software Engineer</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:hesbonmanyinsa96@gmail.com">hesbonmanyinsa96@gmail.com</a></p>
+            <p>Phone: +254743573380</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/hesbon-angwenyi-58b9412b4" target="_blank">Hesbon Angwenyi LinkedIn Profile</a></p>
         </div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Python</div>
-        <div class="bar-container">
-          <div class="bar bar-python"></div>
+        <div class="section">
+            <h2 class="section-title">SUMMARY</h2>
+            <p class="section-content">Enthusiastic and detail-oriented Full Stack Software Developer with a strong foundation in computer science principles and hands-on experience through academic projects and internships. Proficient in a wide range of modern web development technologies and tools, and eager to contribute to dynamic development teams. Demonstrates excellent problem-solving abilities and a passion for learning and implementing new technologies.</p>
+            <p class="section-content">Solid understanding of both front-end and back-end development processes, including design, coding, testing, and deployment. Capable of working collaboratively in team environments and independently managing tasks. Dedicated to creating robust, scalable, and user-friendly applications.</p>
         </div>
-      </div>
-      <h2>Frontend</h2>
-      <div class="skill">
-        <div class="skill-name">JavaScript</div>
-        <div class="bar-container">
-          <div class="bar bar-javascript"></div>
+        <div class="section">
+            <h2 class="section-title">TECHNICAL SKILLS</h2>
+            <div class="skills-category">
+                <h3>Front-End Technologies:</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript<div class="skills-bar"><span data-percent="90%" style="width: 90%;"></span></div></li>
+                    <li>React, Angular, Vue.js<div class="skills-bar"><span data-percent="80%" style="width: 80%;"></span></div></li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Back-End Technologies:</h3>
+                <ul>
+                    <li>Node.js, Express<div class="skills-bar"><span data-percent="85%" style="width: 85%;"></span></div></li>
+                    <li>Java, Spring Boot<div class="skills-bar"><span data-percent="75%" style="width: 75%;"></span></div></li>
+                    <li>Python, Django, Flask<div class="skills-bar"><span data-percent="70%" style="width: 70%;"></span></div></li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Database Technologies:</h3>
+                <ul>
+                    <li>SQL, MySQL, PostgreSQL<div class="skills-bar"><span data-percent="80%" style="width: 80%;"></span></div></li>
+                    <li>NoSQL, MongoDB<div class="skills-bar"><span data-percent="75%" style="width: 75%;"></span></div></li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Version Control:</h3>
+                <ul>
+                    <li>Git, GitHub, GitLab<div class="skills-bar"><span data-percent="85%" style="width: 85%;"></span></div></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">React</div>
-        <div class="bar-container">
-          <div class="bar bar-react"></div>
+        <div class="section">
+            <h2 class="section-title">Additional Skills</h2>
+            <ul class="section-content">
+                <li>Good analytical and communication skills and ability to work independently with minimal supervision and perform as part of a team.</li>
+                <li>Excellent interpersonal skills, team player with an analytical bent to problem solving and delivering under high stress environments.</li>
+            </ul>
         </div>
-      </div>
-      <h2>Database Management</h2>
-      <div class="skill">
-        <div class="bar-container">
-          <div class="bar bar-database"></div>
+        <div class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            <h3>projects</h3>
+            <p><strong>QA/ Automation Tester</strong> (Sept 2023    -  May 2024 - Present)</p>
+            <p>Event Planner Application</p>
+            <ul class="section-content">
+                <li>Developed an event planner application using React.js for the front-end and Node.js with Express for the back-end.</li>
+                <li>Implemented features for event scheduling, attendee management, and real-time notifications using WebSocket technology.</li>
+            </ul>
+            <p>E-commerce Website</p>
+            <ul class="section-content">
+                <li>Collaborated on a team to design and develop an e-commerce website using React for the front-end and Python with Django for the back-end.</li>
+                <li>Integrated payment gateways, product catalog management, and user authentication functionalities.</li>
+            </ul>
+            <p>Bank Application</p>
+            <ul class="section-content">
+                <li>Led the development of a secure bank application using Java with Spring Boot.</li>
+                <li>Ensured compliance with industry standards for data encryption and authentication protocols.</li>
+                <li>Implemented transaction processing, account management, and customer support features.</li>
+            </ul>
         </div>
-      </div>
-      <h2>Agile Software Development</h2>
-      <div class="skill">
-        <div class="bar-container">
-          <div class="bar bar-agile"></div>
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <p><strong>High School</strong></p>
+            <p class="section-content">Nyaikuro High (2018 - 2021)</p>
         </div>
-      </div>
-    </section>
-
-    <section class="contact-info">
-      <h2>Contact Information</h2>
-      <p>You can reach me via email at <a href="mailto:hesbonmanyinsa96@gmail.com">hesbonmanyinsa96@gmail.com</a>, phone at <a href="tel:+254743573380">+254743573380</a>, or connect with me on <a href="https://www.linkedin.com/in/hesbon-angwenyi-58b9412b4">LinkedIn</a>. I am enthusiastic about discussing new opportunities and collaborations. Whether you're interested in hiring me for a position, collaborating on a project, or simply want to network, feel free to reach out. I'm always open to making new professional connections and exploring how we can work together to achieve great things.</p>
-    </section>
-  </div>
+    </div>
 </body>
 </html>
