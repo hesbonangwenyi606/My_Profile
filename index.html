@@ -19,6 +19,14 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex; /* Ensure container and image are displayed in flex layout */
+        }
+        .profile-picture {
+            margin-left: auto; /* Push the picture to the right */
+            max-width: 200px; /* Adjust width as needed */
+            border-radius: 50%; /* Round the corners for a circular look */
+            border: 4px solid #3498db; /* Optional: Add border */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
         }
         h1, h2, h3 {
             color: #2c3e50;
@@ -109,89 +117,90 @@
 </head>
 <body>
     <div class="container">
-        <h1>Hesbon Angwenyi</h1>
-        <h2>Software Engineer</h2>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:hesbonmanyinsa96@gmail.com">hesbonmanyinsa96@gmail.com</a></p>
-            <p>Phone: +254743573380</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/hesbon-angwenyi-58b9412b4" target="_blank">Hesbon Angwenyi LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/hesbonangwenyi606" target="_blank">hesbonangwenyi606</a></p>
-        </div>
-        <div class="section">
-            <h2 class="section-title">SUMMARY</h2>
-            <p class="section-content">Enthusiastic and detail-oriented Full Stack Software Developer with a strong foundation in computer science principles and hands-on experience through academic projects and internships. Proficient in a wide range of modern web development technologies and tools, and eager to contribute to dynamic development teams. Demonstrates excellent problem-solving abilities and a passion for learning and implementing new technologies.</p>
-            <p class="section-content">Solid understanding of both front-end and back-end development processes, including design, coding, testing, and deployment. Capable of working collaboratively in team environments and independently managing tasks. Dedicated to creating robust, scalable, and user-friendly applications.</p>
-        </div>
-        <div class="section">
-            <h2 class="section-title">TECHNICAL SKILLS</h2>
-            <div class="skills-category">
-                <h3>Front-End Technologies:</h3>
-                <ul>
-                    <li>HTML, CSS, JavaScript<div class="skills-bar"><span data-percent="90%" style="width: 90%;"></span></div></li>
-                    <li>React, Angular, Vue.js<div class="skills-bar"><span data-percent="80%" style="width: 80%;"></span></div></li>
-                </ul>
-            </div>
-            <div class="skills-category">
-                <h3>Back-End Technologies:</h3>
-                <ul>
-                    <li>Node.js, Express<div class="skills-bar"><span data-percent="85%" style="width: 85%;"></span></div></li>
-                    <li>Java, Spring Boot<div class="skills-bar"><span data-percent="75%" style="width: 75%;"></span></div></li>
-                    <li>Python, Django, Flask<div class="skills-bar"><span data-percent="70%" style="width: 70%;"></span></div></li>
-                </ul>
-            </div>
-            <div class="skills-category">
-                <h3>Database Technologies:</h3>
-                <ul>
-                    <li>SQL, MySQL, PostgreSQL<div class="skills-bar"><span data-percent="80%" style="width: 80%;"></span></div></li>
-                    <li>NoSQL, MongoDB<div class="skills-bar"><span data-percent="75%" style="width: 75%;"></span></div></li>
-                </ul>
-            </div>
-            <div class="skills-category">
-                <h3>Version Control:</h3>
-                <ul>
-                    <li>Git, GitHub, GitLab<div class="skills-bar"><span data-percent="85%" style="width: 85%;"></span></div></li>
-                </ul>
+        <div>
+            <h1>Hesbon Angwenyi</h1>
+            <h2>Software Engineer</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:hesbonmanyinsa96@gmail.com">hesbonmanyinsa96@gmail.com</a></p>
+                <p>Phone: +254743573380</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/hesbon-angwenyi-58b9412b4" target="_blank">Hesbon Angwenyi LinkedIn Profile</a></p>
+                <p>GitHub: <a href="https://github.com/hesbonangwenyi606" target="_blank">hesbonangwenyi606</a></p>
             </div>
         </div>
-        <div class="section">
-            <h2 class="section-title">Additional Skills</h2>
-            <ul class="section-content">
-                <li>Good analytical and communication skills and ability to work independently with minimal supervision and perform as part of a team.</li>
-                <li>Excellent interpersonal skills, team player with an analytical bent to problem solving and delivering under high stress environments.</li>
+        <img src="path/to/your/picture.jpg" alt="Hesbon Angwenyi" class="profile-picture">
+    </div>
+    <div class="section">
+        <h2 class="section-title">SUMMARY</h2>
+        <p class="section-content">Enthusiastic and detail-oriented Full Stack Software Developer with a strong foundation in computer science principles and hands-on experience through academic projects and internships. Proficient in a wide range of modern web development technologies and tools, and eager to contribute to dynamic development teams. Demonstrates excellent problem-solving abilities and a passion for learning and implementing new technologies.</p>
+        <p class="section-content">Solid understanding of both front-end and back-end development processes, including design, coding, testing, and deployment. Capable of working collaboratively in team environments and independently managing tasks. Dedicated to creating robust, scalable, and user-friendly applications.</p>
+    </div>
+    <div class="section">
+        <h2 class="section-title">TECHNICAL SKILLS</h2>
+        <div class="skills-category">
+            <h3>Front-End Technologies:</h3>
+            <ul>
+                <li>HTML, CSS, JavaScript<div class="skills-bar"><span data-percent="90%" style="width: 90%;"></span></div></li>
+                <li>React, Angular, Vue.js<div class="skills-bar"><span data-percent="80%" style="width: 80%;"></span></div></li>
             </ul>
         </div>
-        <div class="section">
-            <h2 class="section-title">Professional Experience</h2>
-            <h3>projects</h3>
-            <p><strong>QA/ Automation Tester</strong> (Sept 2023 - May 2024 - Present)</p>
-            <p>Event Planner Application</p>
-            <ul class="section-content">
-                <li>Developed an event planner application using React.js for the front-end and Node.js with Express for the back-end.</li>
-                <li>Implemented features for event scheduling, attendee management, and real-time notifications using WebSocket technology. Live Demo: <a href="http://localhost:3000/" target="_blank">(Live Demo)</a></li>
-                <li>GitHub Backend Link: <a href="https://github.com/irungudennisnganga/Event-Planner-App-backend.git" target="_blank">Event Planner Backend GitHub Repository</a></li>
-                <li>GitHub Frontend Link: <a href="https://github.com/MainaZaquir/Event-Planner.git" target="_blank">Event Planner Frontend GitHub Repository</a></li>
-            </ul>
-            <p>E-commerce Website</p>
-            <ul class="section-content">
-                <li>Collaborated on a team to design and develop an e-commerce website using React for the front-end and Python with Django for the back-end.</li>
-                <li>Integrated payment gateways, product catalog management, and user authentication functionalities.</li>
-                <li>GitHub Link: <a href="https://github.com/Ndungu-Muigai/ShopSavvyHub-ecommerce-site.git" target="_blank">ShopSavvyHub E-commerce GitHub Repository</a></li>
-                <li>Live Demo: <a href="https://shopsavvy-ecommerce-site.netlify.app/" target="_blank">(Live Demo)</a></li>
-            </ul>
-            <p>Bank Application</p>
-            <ul class="section-content">
-                <li>Led the development of a secure bank application using Java with Spring Boot.</li>
-                <li>Ensured compliance with industry standards for data encryption and authentication protocols.</li>
-                <li>Implemented transaction processing, account management, and customer support features.</li>
-                <li>GitHub Link: <a href="https://github.com/MaxLubale/Vaulted_Wealth.git" target="_blank">Vaulted Wealth GitHub Repository</a></li>
-                <li>Live Demo: <a href="https://vaulted-wealth.onrender.com/" target="_blank">(Live Demo)</a></li>
+        <div class="skills-category">
+            <h3>Back-End Technologies:</h3>
+            <ul>
+                <li>Node.js, Express<div class="skills-bar"><span data-percent="85%" style="width: 85%;"></span></div></li>
+                <li>Java, Spring Boot<div class="skills-bar"><span data-percent="75%" style="width: 75%;"></span></div></li>
+                <li>Python, Django, Flask<div class="skills-bar"><span data-percent="70%" style="width: 70%;"></span></div></li>
             </ul>
         </div>
-        <div class="section">
-            <h2 class="section-title">Education</h2>
-            <p><strong>High School</strong></p>
-            <p class="section-content">Nyaikuro High (2018 - 2021)</p>
+        <div class="skills-category">
+            <h3>Database Technologies:</h3>
+            <ul>
+                <li>SQL, MySQL, PostgreSQL<div class="skills-bar"><span data-percent="80%" style="width: 80%;"></span></div></li>
+                <li>NoSQL, MongoDB<div class="skills-bar"><span data-percent="75%" style="width: 75%;"></span></div></li>
+            </ul>
         </div>
+        <div class="skills-category">
+            <h3>Version Control:</h3>
+            <ul>
+                <li>Git, GitHub, GitLab<div class="skills-bar"><span data-percent="85%" style="width: 85%;"></span></div></li>
+            </ul>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="section-title">Additional Skills</h2>
+        <ul class="section-content">
+            <li>Good analytical and communication skills and ability to work independently with minimal supervision and perform as part of a team.</li>
+            <li>Excellent interpersonal skills, team player with an analytical bent to problem solving and delivering under high stress environments.</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2 class="section-title">Professional Experience</h2>
+        <h3>projects</h3>
+        <p><strong>QA/ Automation Tester</strong> (Sept 2023 - May 2024 - Present)</p>
+        <p>Event Planner Application</p>
+        <ul class="section-content">
+            <li>Developed an event planner application using React.js for the front-end and Node.js with Express for the back-end.</li>
+            <li>Implemented features for event scheduling, attendee management, and real-time notifications using WebSocket technology. Live Demo: <a href="http://localhost:3000/" target="_blank">(Live Demo)</a></li>
+            <li>GitHub Backend Link: <a href="https://github.com/irungudennisnganga/Event-Planner-App-backend.git" target="_blank">Event Planner Backend GitHub Repository</a></li>
+            <li>GitHub Frontend Link: <a href="https://github.com/MainaZaquir/Event-Planner.git" target="_blank">Event Planner Frontend GitHub Repository</a></li>
+        </ul>
+        <p>E-commerce Website</p>
+        <ul class="section-content">
+            <li>Collaborated on a team to design and develop an e-commerce website using React for the front-end and Python with Django for the back-end.</li>
+            <li>Integrated payment gateways, product catalog management, and user authentication functionalities. Live Demo: <a href="https://shopsavvy-ecommerce-site.netlify.app/" target="_blank">(Live Demo)</a></li>
+            <li>GitHub Link: <a href="https://github.com/Ndungu-Muigai/ShopSavvyHub-ecommerce-site.git" target="_blank">ShopSavvyHub GitHub Repository</a></li>
+        </ul>
+        <p>Bank Application</p>
+        <ul class="section-content">
+            <li>Led the development of a secure bank application using Java with Spring Boot.</li>
+            <li>Ensured compliance with industry standards for data encryption and authentication protocols.</li>
+            <li>Implemented transaction processing, account management, and customer support features. Live Demo: <a href="https://vaulted-wealth.onrender.com/" target="_blank">(Live Demo)</a></li>
+            <li>GitHub Link: <a href="https://github.com/MaxLubale/Vaulted_Wealth.git" target="_blank">Vaulted Wealth GitHub Repository</a></li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        <p><strong>High School</strong></p>
+        <p class="section-content">Nyaikuro High (2018 - 2021)</p>
     </div>
 </body>
 </html>
