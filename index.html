@@ -13,6 +13,9 @@
             background: url('/mnt/data/Screenshot from 2024-06-24 17-34-07.png') no-repeat center center fixed;
             background-size: cover;
             color: #2c3e50;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure body covers the entire viewport height */
         }
         .container {
             max-width: 800px;
@@ -27,7 +30,7 @@
             margin-left: auto; /* Push the picture to the right */
             max-width: 200px; /* Adjust width as needed */
             border-radius: 50%; /* Round the corners for a circular look */
-            border: 4px solid #3498db; /* Optional: Add border */
+            border: 4px solid #3498db; /* Optional: Add blue border */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
         }
         h1, h2, h3 {
@@ -109,11 +112,31 @@
             margin-bottom: 10px;
         }
         .section-content {
-            font-size: 16px;
+            font-size: 18px; /* Adjusted font size for section content */
             line-height: 1.8;
         }
         .section-content ul {
             padding-left: 20px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-nav {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+        .footer-nav li {
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -141,7 +164,7 @@
         <div class="skills-category">
             <h3>Front-End Technologies:</h3>
             <ul>
-                <li>HTML, CSS, JavaScript<div class="skills-bar"><span data-percent="90%" style="width: 90%;"></span></div></li>
+                <li>HTML5, CSS3, JavaScript<div class="skills-bar"><span data-percent="90%" style="width: 90%;"></span></div></li>
                 <li>React, Angular, Vue.js<div class="skills-bar"><span data-percent="80%" style="width: 80%;"></span></div></li>
             </ul>
         </div>
@@ -168,16 +191,16 @@
         </div>
     </div>
     <div class="section">
-        <h2 class="section-title">Additional Skills</h2>
+        <h2 class="section-title">ADDITIONAL SKILLS</h2>
         <ul class="section-content">
             <li>Good analytical and communication skills and ability to work independently with minimal supervision and perform as part of a team.</li>
             <li>Excellent interpersonal skills, team player with an analytical bent to problem solving and delivering under high stress environments.</li>
         </ul>
     </div>
     <div class="section">
-        <h2 class="section-title">Professional Experience</h2>
-        <h3>projects</h3>
-        <p><strong>QA/ Automation Tester</strong> (Sept 2023 - May 2024 - Present)</p>
+        <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+        <h3>Projects</h3>
+        <p><strong>QA/ Automation Tester</strong> (Sept 2023 - May 2024)</p>
         <p>E-commerce Website</p>
         <ul class="section-content">
             <li>Collaborated on a team to design and develop an e-commerce website using React for the front-end and Python with Django for the back-end.</li>
@@ -202,9 +225,21 @@
         </ul>
     </div>
     <div class="section">
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title">EDUCATION</h2>
+        <p><strong>Software Development Certificate</strong></p>
+        <p class="section-content">Moringa School (2023 - 2024)</p>
         <p><strong>High School</strong></p>
         <p class="section-content">Nyaikuro High (2018 - 2021)</p>
     </div>
-</body>
-</html>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hesbon Angwenyi. All rights reserved.</p>
+            <ul class="footer-nav">
+                <li><a href="#top">Back to Top</a></li>
+                <li><a href="https://github.com/hesbonangwenyi606" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/hesbon-angwenyi-58b9412b4" target="_blank">LinkedIn</a></li>
+                <li><a href="tel:+254743573380">Contact</a></li>
+                <li><a href="mailto:hesbonmanyinsa96@gmail.com">Email</a></li>
+            </ul>
+        </div>
+    </footer>
