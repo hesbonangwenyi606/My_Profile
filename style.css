@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-column {
+    width: 30%;
+    background-color: #392c50;
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 12px 0 0 8px;
+}
+
+.right-column {
+    width: 70%;
+    padding: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.skills-bar {
+    height: 30px;
+    background-color: #ecf0f1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.skills-bar span {
+    background-color: blueviolet;
+    display: block;
+    height: 100%;
+}
+
+.skills-bar span::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50px; /* Adjust this width as needed */
+    background-color: blueviolet;
+}
+
+.skills-bar .skill-value {
+    position: absolute;
+    right: 10px; /* Adjust this value to fine-tune position */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer-nav li {
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+    .left-column {
+        width: 100%;
+        border-radius: 0;
+        padding: 20px;
+    }
+    .right-column {
+        width: 100%;
+        padding: 20px;
+    }
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
