@@ -9,7 +9,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: yellow;
+            background-color: #f0f0f0; /* Updated background color */
             color: #2c3e50;
         }
         .container {
@@ -20,6 +20,7 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
+            flex-wrap: wrap; /* Ensure responsiveness */
         }
         .left-column {
             width: 30%;
@@ -73,29 +74,22 @@
         }
         .skills-bar {
             background-color: #e0e0e0;
-            border-radius: 5px;
+            border-radius: 20px;
             overflow: hidden;
-            margin-top: 5px;
+            margin-top: 15px;
             position: relative;
             display: flex;
             height: 30px; /* Ensure consistent height */
         }
-        .skills-bar span {
-            background-color: #3498db;
-            position: relative;
-            display: block;
-            width: 0; /* Initial width set to 0 */
-            transition: width 1s ease; /* Smooth transition effect */
-        }
         .skills-bar span::after {
-            content: attr(data-percentage) '%';
-            position: absolute;
-            right: 7px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 12px;
-            color: black; /* Changed color to black */
-        }
+    content: attr(data-percentage) '%';
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: black; /* Set the color to black */
+}
         .footer-nav {
             list-style-type: none;
             padding: 0;
@@ -106,6 +100,26 @@
         }
         .footer-nav li {
             margin-right: 40px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 95%; /* Adjust container width for smaller screens */
+            }
+            .left-column {
+                width: 100%; /* Full width on smaller screens */
+                border-radius: 0; /* Adjust border radius */
+                padding: 20px;
+            }
+            .right-column {
+                width: 100%; /* Full width on smaller screens */
+                padding: 20px;
+            }
+            .footer-nav {
+                flex-direction: column; /* Stack nav links vertically */
+                align-items: center; /* Center align nav links */
+            }
         }
     </style>
 </head>
