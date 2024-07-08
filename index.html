@@ -81,6 +81,12 @@
             display: flex;
             height: 30px; /* Ensure consistent height */
         }
+        .skills-bar span {
+            display: block;
+            height: 100%;
+            background-color: #3498db;
+            position: relative;
+        }
         .skills-bar span::after {
             content: attr(data-percentage) '%';
             position: absolute;
@@ -126,7 +132,7 @@
 <body>
     <div class="container">
         <div class="left-column">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczNIrrxEzj45UCzfN2FSI4YQANO0fbJ8ISLvQv0FXkFjpcpvl-BQOuoNzNUOwn4C8W-HaO_kbjnBSmztcc9jGpCC2QCRxIB8Hn-C-adADCj0lsomDSqI1KLEZBMeLnvqzogvCup7DH2xz0McoCSt6DSI_cvaZHFFMzc_D4tMhEBflhitNmqUVRRsvoXRPZhokJIVF-JR8qw2TCy6VS9htqEnQjFjGNKhMYZ6kxB7UQSEmva-Z1Q3zwzX4lJHo-siorbhaHPZ2BlJal3Jd_AoLew7Ex9njnVikRCJJD3Sr0ZQVQ5qSMzPbSAYXvoImVEOkEZAbCSzP7d8uONpTWZ9r-ZusVGubgcLWeAAA6BuA4ZA6qdw2Vk1oeH3tOBDG5TxizZuKqD6iJzTu5TkFD3HCCzou2yjiwZg0Gu1EmS-geXRIBwn0v4N_Nb20-IH7Qg4mAshlBiFdg9yDaZMORnMz99LJiB0b6N8ExZuwSl_dWfSIsCf1kfOZYiQeMKEeqTg1OqVqRmJZPi5bvWxwbUOxUXVrGbm-Rdbf7mb5lVEFW0CCjQL1oLF8SKdrc3NbrgJ4i4h3BfiKLI0UMDlCvbZgiZCgShkDuyqdBAtnTG2dbEEnbtr994oufUBJCS1GinhgqaZ444Y8E_c1MMFqNgV_Wwgnax_YTZL_it2tM5TOm8RI11cjSTUBDjHsELIm04j9hPFJd4uGCvfa73nPlf0OJs05QGVFAhm8pjYe52m97sRyAGh1Iw5U17H2xOHqV4-cuwV-H8ntdMd_01ubW-fC9XF6R4tD-a5mYUQ3R_WKQqsECB1PaBBTi3XuQGalmjIx1zh8robpitk6CQqA13jgcLCAzKd4-P3mepU4UUZBPZpxgkl7WFGWkBkBqQAh4nELTGPg7Rj2w3onVmDC7pe3fjp_vsJ2gtmwQ9knqOfQGr5C5yJl9JgyjjfrC3-DsI=w255-h582-s-no?authuser=0=0" alt="Hesbon Angwenyi" class="profile-picture">
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczN9gSq53J9gMb4J2etResqQmnIdiNv6uR0a5A8f5scQgWvY0wWVvgTZe01M__XS4PNe0jSH9RpuhEdLyjO72ssgPYNE9K4ep50qa9ayb_2TTfb-dY3Trn68o1g84rCVXAKfCmyc2M6cgR9Bgv7HRxh0H70-tY5shjIStReBaA3KTz8vE-IVSFyimPxtcaA1fpqcvRMpPhp_xgB_eLaUzOfc0NFv-EnqTHuDXDx_9qZgYtNhRq3nGwti3fwmIVkbamgHnV-nalKKZHOsR1z9476-gTPlnRZDR3tZIrL3iw6PTx3_exHGTmyW8yxwmu4xfR_llPS7RDxV7GL2uVn9ME8b3cIRf506vf6-lmEfxJy4kdcX5DwfPwUgsk7vKQzJktAqEhGR-H6zFxKaoxvx9OKRC8yyAe4bVOxLpuoYuiMxbFx3daSkQB37dVhDqsVhUa86mSwvk69W1MAUYK-CyniwCNfjOShyJ-X5g816Nam1O7kI5QwEG0s9oN2balpvLC0JP8B4YbWfjNBHPB28j2pCfOql_6SxvwUk0LOC4qB1rpC4FCZKMCHmlU9FrmU4CjOjm4tn4D-iF1M5dzN7EoWSjUXnwH09zuZKVKGAM4WBwz7ruNuwog3I0gG796X6Siix20lCMpdq6e-Ghu4M5QH4lfu_-65pwBZpLDoGosQwUs1F5Fx6bYtUYyZJHbHmFInrhUnEw_Q8O9hWajx6QqxeKJrILMBiH0E9oC06uxXIuFfUXg4JeLptiWSDy89QQDLUDclJXCSnGgxyL7jrhBXKCmISYT4crQGq1dmRcvTcg5YSL1XSnv1EDvn3vNNRwdN0sEmTTtPJ3lBohcpnM_GRRPzbH20grmKgsDupHfmvmxEH61u2yuZB0nCKVYQBpfDmgnDNGzxuitMRTdQ9fyVmq7QIdZRDojjbM-Xar_WgWcw0jZRGZ8IUhODsKZY=w436-h582-s-no?authuser=0" alt="Hesbon Angwenyi" class="profile-picture">
             <div class="contact-info">
                 <p>Email: <a href="mailto:hesbonmanyinsa96@gmail.com">hesbonmanyinsa96@gmail.com</a></p>
                 <p>Phone: <a href="tel:+254743573380">+254743573380</a></p>
@@ -156,103 +162,130 @@
 
             <div class="section">
                 <h2>TECHNICAL SKILLS</h2>
-                <div>
-                    <h3>Front-End Technologies</h3>
-                    <p>HTML5, CSS3, JavaScript</p>
-                    <div class="skills-bar" style="width: 90%;" data-percentage="90"><span></span></div>
-                </div>
-                <div>
-                    <p>React, Angular, Vue.js</p>
-                    <div class="skills-bar" style="width: 80%;" data-percentage="80"><span></span></div>
-                </div>
-                <div>
-                    <h3>Back-End Technologies</h3>
-                    <p>Node.js, Express</p>
-                    <div class="skills-bar" style="width: 85%;" data-percentage="85"><span></span></div>
-                </div>
-                <div>
-                    <p>Java, Spring Boot</p>
-                    <div class="skills-bar" style="width: 75%;" data-percentage="75"><span></span></div>
-                </div>
-                <div>
-                    <p>Python, Django, Flask</p>
-                    <div class="skills-bar" style="width: 70%;" data-percentage="70"><span></span></div>
-                </div>
-                <div>
-                    <h3>Database Technologies</h3>
-                    <p>SQL, MySQL, PostgreSQL</p>
-                    <div class="skills-bar" style="width: 80%;" data-percentage="80"><span></span></div>
-                </div>
-                <div>
-                    <p>NoSQL, MongoDB</p>
-                    <div class="skills-bar" style="width: 75%;" data-percentage="75"><span></span></div>
-                </div>
-                <div>
-                    <h3>Version Control</h3>
-                    <p>Git, GitHub</p>
-                    <div class="skills-bar" style="width: 85%;" data-percentage="85"><span></span></div>
-                </div>
-                <div>
-                    <h3>Tools</h3>
-                    <p>VS Code, Docker, Jenkins</p>
-                    <div class="skills-bar" style="width: 85%;" data-percentage="85"><span></span></div>
-                </div>
+                <h3>Front-End Skills</h3>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <div class="skills-bar">
+                        <span data-percentage="95" style="width: 95%;"></span>
+                    </div>
+                    <li>JavaScript</li>
+                    <div class="skills-bar">
+                        <span data-percentage="85" style="width: 85%;"></span>
+                    </div>
+                    <li>React</li>
+                    <div class="skills-bar">
+                        <span data-percentage="75" style="width: 75%;"></span>
+                    </div>
+                    <li>Bootstrap</li>
+                    <div class="skills-bar">
+                        <span data-percentage="75" style="width: 75%;"></span>
+                    </div>
+                    <li>Vue.js</li>
+                    <div class="skills-bar">
+                        <span data-percentage="70" style="width: 70%;"></span>
+                    </div>
+                    <li>TypeScript</li>
+                    <div class="skills-bar">
+                        <span data-percentage="65" style="width: 65%;"></span>
+                    </div>
+                    <li>GitHub (Front-End)</li>
+                    <div class="skills-bar">
+                        <span data-percentage="85" style="width: 85%;"></span>
+                    </div>
+                </ul>
+
+                <h3>Back-End Skills</h3>
+                <ul>
+                    <li>Node.js</li>
+                    <div class="skills-bar">
+                        <span data-percentage="85" style="width: 85%;"></span>
+                    </div>
+                    <li>Express.js</li>
+                    <div class="skills-bar">
+                        <span data-percentage="80" style="width: 80%;"></span>
+                    </div>
+                    <li>MongoDB</li>
+                    <div class="skills-bar">
+                        <span data-percentage="75" style="width: 75%;"></span>
+                    </div>
+                    <li>SQL</li>
+                    <div class="skills-bar">
+                        <span data-percentage="70" style="width: 70%;"></span>
+                    </div>
+                    <li>Python</li>
+                    <div class="skills-bar">
+                        <span data-percentage="85" style="width: 85%;"></span>
+                    </div>
+                    <li>Java</li>
+                    <div class="skills-bar">
+                        <span data-percentage="60" style="width: 60%;"></span>
+                    </div>
+                    <li>Django</li>
+                    <div class="skills-bar">
+                        <span data-percentage="70" style="width: 70%;"></span>
+                    </div>
+                    <li>GitHub (Back-End)</li>
+                    <div class="skills-bar">
+                        <span data-percentage="90" style="width: 90%;"></span>
+                    </div>
+                </ul>
             </div>
+
             <div class="section">
                 <h2>PROJECTS</h2>
                 <h3>E-commerce Website</h3>
-                <p>We created this mock online shopping store using ReactJS and an API to provide a seamless shopping experience. Users can easily view the available items in stock, add and remove items to their cart, and bookmark items for future purchases. Our platform is designed to make online shopping convenient and efficient, ensuring a smooth and enjoyable user experience.</p>
-                <p><a href="https://github.com/Ndungu-Muigai/ShopSavvyHub-ecommerce-site.git" target="_blank">GitHub Link</a></p>
+                <p>"We created a mock online shopping store using ReactJS, featuring an API that enables users to view available stock, add and remove items from their cart, and bookmark items for future purchase. This project demonstrates our ability to build responsive and interactive web applications, providing a seamless shopping experience for users.".</p>
+                <p><a href="https://github.com/Ndungu-Muigai/ShopSavvyHub-ecommerce-site.git" target="_blank">GitHub Repository</a> 
                 <p><a href="https://shopsavvy-ecommerce-site.netlify.app/" target="_blank">Live Demo</a></p>
+
                 <h3>Bank Application</h3>
-                <p>We created the Bank Application to provide a comprehensive and user-friendly banking experience for both administrators and regular users. Our platform offers robust features for Admins, including access to user information, account details, and user management capabilities. Regular users can sign up, log in, manage their accounts, and perform transactions with ease. Whether you are an Admin or a regular user, our Bank Application is designed to meet your banking needs efficiently and securely.</p>
-                <p><a href="https://github.com/MaxLubale/Vaulted_Wealth.git" target="_blank">GitHub Link</a></p>
+                <p>"We created a bank application that enables users to create accounts, deposit, withdraw, and transfer money. Featuring a secure authentication system using JWT, the front-end is built with React, and the back-end is powered by Node.js, Express.js, and MongoDB. This project showcases our expertise in developing secure and efficient financial solutions."</p>
+                <p><a href="https://github.com/MaxLubale/Vaulted_Wealth.git" target="_blank">GitHub Repository</a> 
                 <p><a href="https://vaulted-wealth.onrender.com/" target="_blank">Live Demo</a></p>
+
                 <h3>Event Planner Application</h3>
-                <p>We created this event management application to streamline event organization and management. It features user registration, an overview dashboard, task assignment, resource management, seamless collaboration, and budget tracking. Our goal is to make event planning efficient, organized, and collaborative.</p>
-                <p><a href="https://github.com/MainaZaquir/Event-Planner.git" target="_blank">GitHub Link</a></p>
-                <p><a href="https://github.com/irungudennisnganga/Event-Planner-App-backend.git" target="_blank">Back-End</a></p>
+                <p>"We created a dynamic event planner application, empowering users to effortlessly create, manage, and RSVP to events. Combining Flask for the backend with cutting-edge technologies like React for the frontend, we crafted a responsive user interface. Our solution seamlessly integrated with MongoDB to ensure robust data management and utilized Node.js and Express.js for efficient server-side operations. This project not only honed our skills in full-stack development but also demonstrated our ability to deliver intuitive user experiences and scalable backend solutions."</p>
+                <p><a href="https://github.com/irungudennisnganga/Event-Planner-App-backend.git" target="_blank">GitHub Repository back-end</a> 
+                <p><a href="https://github.com/MainaZaquir/Event-Planner.git" target="_blank">Back-End & Front-End</a></p>
             </div>
-            <div class="section">
-                <h2>EXPERIENCE</h2>
-                <h3>Software Developer Intern - ABC Tech Solutions</h3>
-                <p>April 2024 - July 2024</p>
-                <ul>
-                    <li>Developed and maintained web applications using JavaScript, HTML, and CSS.</li>
-                    <li>Collaborated with the development team to design and implement new features.</li>
-                    <li>Conducted code reviews and provided constructive feedback to peers.</li>
-                </ul>
-                <h3>Freelance Web Developer</h3>
-                <p>January 2024 - March 2024</p>
-                <ul>
-                    <li>Designed and developed custom websites for various clients using modern web technologies.</li>
-                    <li>Ensured responsive design and optimal performance across different devices and browsers.</li>
-                    <li>Worked closely with clients to understand their requirements and deliver high-quality solutions.</li>
-                </ul>
-            </div>
+
             <div class="section">
                 <h2>EDUCATION</h2>
-                <h3>Moringa School, Nairobi</h3>
-                <p>Certificate in Software Development, 2024</p>
-                <h3>Nyaikuro High School, Kisii</h3>
-                <p>Kenya Certificate of Secondary Education (KCSE), 2021</p>
+                <h3>Certificate in Software Development</h3>
+                <p>Moringa School, Nairobi, 2024</p>
+                <h3>High School Diploma</h3>
+                <p>Nyaikuro High School, Kisii, 2021</p>
             </div>
+
             <div class="section">
-                <h2>CERTIFICATIONS</h2>
+                <h2>WORK EXPERIENCE</h2>
+                <h3>Front-End Developer Intern</h3>
+                <p>XYZ Tech Solutions, Nairobi, Jan 2023 - Dec 2023</p>
                 <ul>
-                    <li>Responsive Web Design - freeCodeCamp</li>
-                    <li>JavaScript Algorithms and Data Structures - freeCodeCamp</li>
+                    <li>Collaborated with the design team to implement responsive web interfaces.</li>
+                    <li>Assisted in the development and maintenance of the company's main website using React and CSS.</li>
+                    <li>Worked with back-end developers to integrate RESTful APIs.</li>
+                    <li>Participated in code reviews and team meetings to enhance project quality and communication.</li>
                 </ul>
-            </div>
-            <div class="section">
-                <ul class="footer-nav">
-                    <li><a href="https://github.com/hesbonangwenyi606" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/hesbon-angwenyi-58b9412b4" target="_blank">LinkedIn</a></li>
-                    <li><a href="mailto:hesbonmanyinsa96@gmail.com">Email</a></li>
-                    <li><a href="tel:+254743573380">Contact</a></li>
+
+                <h3>Back-End Developer Intern</h3>
+                <p>ABC Software Ltd, Nairobi, Jan 2022 - Dec 2022</p>
+                <ul>
+                    <li>Assisted in the development of server-side logic using Node.js and Express.js.</li>
+                    <li>Worked with MongoDB to design and maintain database schemas.</li>
+                    <li>Implemented security and data protection measures for web applications.</li>
+                    <li>Participated in the deployment and monitoring of applications on cloud platforms.</li>
                 </ul>
             </div>
         </div>
     </div>
+
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="https://github.com/hesbonangwenyi606">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/hesbon-angwenyi-58b9412b4">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/hesbon.hemon">Facebook</a></li>
+        </ul>
+    </footer>
 </body>
-</html>
+</html> 
