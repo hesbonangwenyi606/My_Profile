@@ -102,14 +102,47 @@
             padding: 0;
             display: flex;
             gap: 20px;
-            justify-content: center, black;
+            justify-content: center;
             margin-top: 20px;
-            
         }
         .footer-nav li {
             margin-right: 40px;
         }
+        .footer-nav a {
+            color: #ffffff; /* Text color for footer links */
+            padding: 0px 3px;
+            background-color: #5e0f72; /* Background color for footer links */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .footer-nav a:hover {
+            background-color: #65dd15; /* Hover color for footer links */
+        }
+        footer {
+            background-color: #2c3e50; /* Footer background color */
+            color: #ffffff;
+            padding: 0px 0;
+            border-radius: 0 0 8px 8px;
+        }
 
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 95%; /* Adjust container width for smaller screens */
+            }
+            .left-column {
+                width: 100%; /* Full width on smaller screens */
+                border-radius: 0; /* Adjust border radius */
+                padding: 20px;
+            }
+            .right-column {
+                width: 100%; /* Full width on smaller screens */
+                padding: 20px;
+            }
+            .footer-nav {
+                flex-direction: column; /* Stack nav links vertically */
+                align-items: center; /* Center align nav links */
+            }
         /* Media Queries for Responsive Design */
         @media (max-width: 768px) {
             .container {
@@ -176,7 +209,7 @@
                     </div>
                     <li>React</li>
                     <div class="skills-bar">
-                        <span data-percentage="75" style="width: 75%;"></span>
+                        <span data-percentage="85" style="width: 85%;"></span>
                     </div>
                     <li>Bootstrap</li>
                     <div class="skills-bar">
@@ -189,10 +222,6 @@
                     <li>TypeScript</li>
                     <div class="skills-bar">
                         <span data-percentage="65" style="width: 65%;"></span>
-                    </div>
-                    <li>GitHub (Front-End)</li>
-                    <div class="skills-bar">
-                        <span data-percentage="85" style="width: 85%;"></span>
                     </div>
                 </ul>
 
@@ -212,7 +241,7 @@
                     </div>
                     <li>SQL</li>
                     <div class="skills-bar">
-                        <span data-percentage="70" style="width: 70%;"></span>
+                        <span data-percentage="80" style="width: 80%;"></span>
                     </div>
                     <li>Python</li>
                     <div class="skills-bar">
@@ -220,15 +249,15 @@
                     </div>
                     <li>Java</li>
                     <div class="skills-bar">
-                        <span data-percentage="60" style="width: 60%;"></span>
+                        <span data-percentage="65" style="width: 65%;"></span>
                     </div>
                     <li>Django</li>
                     <div class="skills-bar">
-                        <span data-percentage="70" style="width: 70%;"></span>
+                        <span data-percentage="75" style="width: 75%;"></span>
                     </div>
-                    <li>GitHub (Back-End)</li>
+                    <li>GitHub</li>
                     <div class="skills-bar">
-                        <span data-percentage="90" style="width: 90%;"></span>
+                        <span data-percentage="95" style="width: 95%;"></span>
                     </div>
                 </ul>
             </div>
@@ -248,7 +277,7 @@
                 <h3>Event Planner Application</h3>
                 <p>"We created a dynamic event planner application, empowering users to effortlessly create, manage, and RSVP to events. Combining Flask for the backend with cutting-edge technologies like React for the frontend, we crafted a responsive user interface. Our solution seamlessly integrated with MongoDB to ensure robust data management and utilized Node.js and Express.js for efficient server-side operations. This project not only honed our skills in full-stack development but also demonstrated our ability to deliver intuitive user experiences and scalable backend solutions."</p>
                 <p><a href="https://github.com/irungudennisnganga/Event-Planner-App-backend.git" target="_blank">GitHub Repository back-end</a> 
-                <p><a href="https://github.com/MainaZaquir/Event-Planner.git" target="_blank">Back-End & Front-End</a></p>
+                <p><a href="https://github.com/MainaZaquir/Event-Planner.git" target="_blank">GitHub Repository</a></p>
             </div>
 
             <div class="section">
