@@ -10,7 +10,7 @@
             margin: 100;
             padding: 300;
             background: url('https://cdn-ampfo.nitrocdn.com/jBBcfCwRipPOrPCiURukjdzGMLhYuxle/assets/images/optimized/rev-44e601e/www.universal-translation-services.com/wp-content/uploads/2022/01/kenya-and-kenya-flag.jpg') no-repeat center center fixed; /* Add your background image URL */
-            background-size: cover; /* Ensure the image covers the entire background */
+            background-size: cover; 
             color: #6c12a8;
         }
         .container {
@@ -143,25 +143,7 @@
                 flex-direction: column; /* Stack nav links vertically */
                 align-items: center; /* Center align nav links */
             }
-        /* Media Queries for Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                max-width: 95%; /* Adjust container width for smaller screens */
-            }
-            .left-column {
-                width: 100%; /* Full width on smaller screens */
-                border-radius: 0; /* Adjust border radius */
-                padding: 20px;
-            }
-            .right-column {
-                width: 100%; /* Full width on smaller screens */
-                padding: 20px;
-            }
-            .footer-nav {
-                flex-direction: column; /* Stack nav links vertically */
-                align-items: center; /* Center align nav links */
-            }
-        }
+        } /* This closing brace was missing */
     </style>
 </head>
 <body>
@@ -255,7 +237,7 @@
                     <div class="skills-bar">
                         <span data-percentage="75" style="width: 75%;"></span>
                     </div>
-                    <li>GitHub</li>
+                    <li>GitHub & GitLab</li>
                     <div class="skills-bar">
                         <span data-percentage="95" style="width: 95%;"></span>
                     </div>
