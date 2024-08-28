@@ -3,290 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hesbon Angwenyi - Resume</title>
+    <title>Bank Statement</title>
     <style>
+        @page {
+            size: A4; /* Set the page size to A4 */
+            margin: 0; /* Remove default margins */
+        }
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 100;
-            padding: 300;
-            background: url('https://cdn-ampfo.nitrocdn.com/jBBcfCwRipPOrPCiURukjdzGMLhYuxle/assets/images/optimized/rev-44e601e/www.universal-translation-services.com/wp-content/uploads/2022/01/kenya-and-kenya-flag.jpg') no-repeat center center fixed; /* Add your background image URL */
-            background-size: cover; 
-            color: #6c12a8;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 100vh; /* Full height to push footer to bottom */
+            margin: 20px; /* Add some margin to avoid content touching edges */
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            width: 210mm; /* Width of A4 in mm */
+            min-height: 297mm; /* Height of A4 in mm */
             padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-wrap: wrap; /* Ensure responsiveness */
+            background-color: #fff;
+            border: 1px solid #ddd;
+            position: relative;
+            box-sizing: border-box; /* Ensure padding and border are included in the width and height */
         }
-        .left-column {
-            width: 30%;
-            background-color: #392c50;
-            color: #ffffff;
-            padding: 40px;
-            border-radius: 12px 0 0 8px;
+        .logo {
+            text-align: center; /* Center align the logo */
+            margin-bottom: 20px; /* Space between logo and header info */
         }
-        .right-column {
-            width: 70%;
-            padding: 20px;
+        .logo img {
+            width: 100px; /* Adjust the size as needed */
         }
-        .profile-picture {
-            width: 100px;
-            height: 100px;
-            border-radius: 100%;
-            margin: 0 auto 80px;
-            display: block;
+        .header-info {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 12px; /* Adjust the font size for the header info */
         }
-        h1, h2, h3 {
-            margin: 10px 0;
-            font-weight: normal;
-        }
-        h1 {
-            font-size: 28px;
-        }
-        h2 {
-            font-size: 22px;
-            color: #3498db;
-        }
-        h3 {
-            font-size: 18px;
-            color: #2c3e50;
-        }
-        p, li {
-            font-size: 14px;
-            line-height: 1.6;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
+        .header-info p {
+            margin: 5px 0;
             text-decoration: underline;
         }
-        .contact-info {
-            margin-bottom: 20px;
+        h1, h2 {
+            text-align: center;
         }
-        .contact-info p {
+        .statement-info {
+            margin-bottom: 20px;
+            text-align: left; /* Align text to the left */
+        }
+        .statement-info p {
             margin: 5px 0;
         }
-        .skills-bar {
-            background-color: #e0e0e0;
-            border-radius: 20px;
-            overflow: hidden;
-            margin-top: 15px;
-            position: relative;
-            display: flex;
-            height: 30px; /* Ensure consistent height */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
         }
-        .skills-bar span {
-            display: block;
-            height: 100%;
-            background-color: #3498db;
-            position: relative;
+        table, th, td {
+            border: 1px solid #ddd;
         }
-        .skills-bar span::after {
-            content: attr(data-percentage) '%';
-            position: absolute;
-            right: 13px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 12px;
-            color: black; 
+        th, td {
+            padding: 10px;
+            text-align: left;
         }
-        .footer-nav {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 20px;
+        th {
+            background-color: #f4f4f4;
         }
-        .footer-nav li {
-            margin-right: 40px;
+        .total-row {
+            font-weight: bold;
+            background-color: #f4f4f4;
         }
-        .footer-nav a {
-            color: #ffffff; /* Text color for footer links */
-            padding: 0px 3px;
-            background-color: #5e0f72; /* Background color for footer links */
-            border-radius: 5px;
-            transition: background-color 0.3s;
+        .note-section {
+            margin-top: 30px; /* Increase space above the note section */
+            font-size: 16px; /* Increase font size for emphasis */
+            background-color: #f9f9f9; /* Light background color for contrast */
+            border: 1px solid #ddd; /* Border for definition */
+            padding: 20px; /* Increased padding for readability */
+            border-radius: 5px; /* Rounded corners for a softer look */
+            text-align: center; /* Center the text */
+            width: 100%; /* Ensure it spans the full width of the container */
+            box-sizing: border-box; /* Ensure padding and border are included in the width */
         }
-        .footer-nav a:hover {
-            background-color: #65dd15; /* Hover color for footer links */
+        .note-section p {
+            margin: 10px 0; /* Increase spacing between lines */
         }
-        footer {
-            background-color: #2c3e50; /* Footer background color */
-            color: #ffffff;
-            padding: 0px 0;
-            border-radius: 0 0 8px 8px;
-        }
-
-        /* Media Queries for Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                max-width: 95%; /* Adjust container width for smaller screens */
-            }
-            .left-column {
-                width: 100%; /* Full width on smaller screens */
-                border-radius: 0; /* Adjust border radius */
-                padding: 20px;
-            }
-            .right-column {
-                width: 100%; /* Full width on smaller screens */
-                padding: 20px;
-            }
-            .footer-nav {
-                flex-direction: column; /* Stack nav links vertically */
-                align-items: center; /* Center align nav links */
-            }
-        } /* This closing brace was missing */
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="left-column">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczOwzd0ZbW_qNHTPiWJ8HoyJB8aMd1RoHBqVZKhZhIc7n4Vg2tnQoa_02RdXjyp6-JjD8wszmd3qzDIY3qVkzKo4AjexwK6-MI_fiKdSJr6Epx-HzmgDNkjgieLN8XQG2PtTYkZzwOOD4KInkYDtT15tIMmA8US0_P4aytS2J3Im82_YG3e8Sz4uaMYy6rAZHMc8FHHdG5StMVMUjJB3Ej3GGCw7TxPfyOJ6bAna-ejEVX5C_dOdpiSnTi0xpK2uuNNz1XgpJ_klVYABCb5Yk9wZlg-MbiKK3vSWRcj6QiF9WslR1WiKlBaGsBWRfX7pShXU6aqtn7s6mgVZyg2Xeb9yseXCLeUBFVa3ygQU7FWeSbubSgYf7_bsdNB_WFuB6uwxkaAxuv5XclNQ6EXMvCICLqJhV4s3KDVcrdmaCzxb0LlkUi1DTC665UoCpG8jvwBnMTsdBMadwkQIwB-85_vbm_XSPS0S3jD5-AjOBoPetp974hXxQD0f0QlNILOGivar10pIRhsbD9v9cbr_f_LWtjXUP4sk9oenUyGksmNI3IAgwg7rh4-NkPt6Eq18Ir1Rm7JFBxR07KzOKoQvMcDI11hZSu5xqcWDx_yKf1L_wFnmABU-xNoVx4Wv5TyAXkwRjM81eyhdCnsvt06azFRRclKClIWUlFCIZsPLGNg1IgR5uhiA5VXI19_05uq8bNyeRfA6q3LqkU_E7Mc0E5RjHOWrvGihhPdbFr0dCiIsgVG872b10sgLWGjy_m8gVBW7KTGuhU3Cu-i2ps3TRMUMEumS8mj8oRsbT7Com4MP9YCAXHM_ELBZTYy1y8ByGmq7IK0S0Xn7aDWxjXCjoJL1lbejz-TNmRu_uDkJsjkrDHcAPA-5rY_vy7HZ__sJdWwdPkuoEvHXmldXnMAJ8ujc_7I0MCn26U9K5-lWO-aFegCan2W2oNzmZhtakIY=w436-h582-s-no?authuser=0" alt="Hesbon Angwenyi" class="profile-picture">
-            <div class="contact-info">
-                <p>Email: <a href="mailto:hesbonmanyinsa96@gmail.com">hesbonmanyinsa96@gmail.com</a></p>
-                <p>Phone: <a href="tel:+254743573380">+254743573380</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/hesbon-angwenyi-58b9412b4" target="_blank">Hesbon Angwenyi LinkedIn Profile</a></p>
-                <p>GitHub: <a href="https://github.com/hesbonangwenyi606" target="_blank">hesbonangwenyi606</a></p>
-            </div>
-            <div class="section">
-                <h2>LANGUAGE</h2>
-                <p>English, Swahili</p>
-            </div>
-            <div class="section">
-                <h2>REFERENCE</h2>
-                <p>Available upon request</p>
-            </div>
-            <div class="section">
-                <h2>HOBBIES</h2>
-                <p>Coding, Reading, Travelling</p>
-            </div>
+        <!-- Logo -->
+        <div class="logo">
+            <!-- Replace the source with the path to the Equity Bank logo -->
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-equity-bank-logo-icon-download-in-svg-png-gif-file-formats--money-finance-banking-major-brands-logos-pack-icons-8715821.png?f=webp&w=256" alt="Equity Bank Logo">
         </div>
-        <div class="right-column">
-            <div class="section">
-                <h1>Hesbon Angwenyi</h1>
-                <h2>Software Engineer</h2>
-                <p>Enthusiastic and detail-oriented Full Stack Software Developer with a strong foundation in computer science principles and hands-on experience through academic projects and internships. Proficient in a wide range of modern web development technologies and tools, and eager to contribute to dynamic development teams. Demonstrates excellent problem-solving abilities and a passion for learning and implementing new technologies.</p>
-                <p>Solid understanding of both front-end and back-end development processes, including design, coding, testing, and deployment. Capable of working collaboratively in team environments and independently managing tasks. Dedicated to creating robust, scalable, and user-friendly applications.</p>
-            </div>
 
-            <div class="section">
-                <h2>TECHNICAL SKILLS</h2>
-                <h3>Front-End Skills</h3>
-                <ul>
-                    <li>HTML5 & CSS3</li>
-                    <div class="skills-bar">
-                        <span data-percentage="95" style="width: 95%;"></span>
-                    </div>
-                    <li>JavaScript</li>
-                    <div class="skills-bar">
-                        <span data-percentage="85" style="width: 85%;"></span>
-                    </div>
-                    <li>React</li>
-                    <div class="skills-bar">
-                        <span data-percentage="85" style="width: 85%;"></span>
-                    </div>
-                    <li>Bootstrap</li>
-                    <div class="skills-bar">
-                        <span data-percentage="75" style="width: 75%;"></span>
-                    </div>
-                    <li>Vue.js</li>
-                    <div class="skills-bar">
-                        <span data-percentage="70" style="width: 70%;"></span>
-                    </div>
-                    <li>TypeScript</li>
-                    <div class="skills-bar">
-                        <span data-percentage="65" style="width: 65%;"></span>
-                    </div>
-                </ul>
+        <!-- Header Information -->
+        <div class="header-info">
+            <p>HEAD OFFICE PO BOX 75104-00200 Nairobi, Tel 020-2262000 Fax 2737276, Mobile. 0711026000,  0732112000, Email. info@equitybank.co.ke, Website www.equitybank.co.ke</p>
+        </div>
 
-                <h3>Back-End Skills</h3>
-                <ul>
-                    <li>Node.js</li>
-                    <div class="skills-bar">
-                        <span data-percentage="85" style="width: 85%;"></span>
-                    </div>
-                    <li>Express.js</li>
-                    <div class="skills-bar">
-                        <span data-percentage="80" style="width: 80%;"></span>
-                    </div>
-                    <li>MongoDB</li>
-                    <div class="skills-bar">
-                        <span data-percentage="75" style="width: 75%;"></span>
-                    </div>
-                    <li>SQL</li>
-                    <div class="skills-bar">
-                        <span data-percentage="80" style="width: 80%;"></span>
-                    </div>
-                    <li>Python</li>
-                    <div class="skills-bar">
-                        <span data-percentage="85" style="width: 85%;"></span>
-                    </div>
-                    <li>Java</li>
-                    <div class="skills-bar">
-                        <span data-percentage="65" style="width: 65%;"></span>
-                    </div>
-                    <li>Django</li>
-                    <div class="skills-bar">
-                        <span data-percentage="75" style="width: 75%;"></span>
-                    </div>
-                    <li>GitHub & GitLab</li>
-                    <div class="skills-bar">
-                        <span data-percentage="95" style="width: 95%;"></span>
-                    </div>
-                </ul>
-            </div>
+        <h1>Bank Statement</h1>
+        <div class="statement-info">
+            <p><strong>Account Number:</strong> 0040197283290</p>
+            <p><strong>Customer Name:</strong> HESBON MANYINSA ANGWENYI</p>
+        </div>
 
-            <div class="section">
-                <h2>PROJECTS</h2>
-                <h3>E-commerce Website</h3>
-                <p>"We created a mock online shopping store using ReactJS, featuring an API that enables users to view available stock, add and remove items from their cart, and bookmark items for future purchase. This project demonstrates our ability to build responsive and interactive web applications, providing a seamless shopping experience for users.".</p>
-                <p><a href="https://github.com/Ndungu-Muigai/ShopSavvyHub-ecommerce-site.git" target="_blank">GitHub Repository</a> 
-                <p><a href="https://shopsavvy-ecommerce-site.netlify.app/" target="_blank">Live Demo</a></p>
+        <h2>Transaction Summary</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tran Date</th>
+                    <th>Value Date</th>
+                    <th>Trans Particulars</th>
+                    <th>Instrument Id</th>
+                    <th>Debit (KSh)</th>
+                    <th>Credit (KSh)</th>
+                    <th>Balance (KSh)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Transactions for May -->
+                <tr>
+                    <td>2024-05-01</td>
+                    <td>2024-05-01</td>
+                    <td>Deposit</td>
+                    <td>DEP0001</td>
+                    <td></td>
+                    <td>KSh 20,000.00</td>
+                    <td>KSh 20,000.00</td>
+                </tr>
+                <tr>
+                    <td>2024-05-15</td>
+                    <td>2024-05-15</td>
+                    <td>Withdrawal</td>
+                    <td>WD0001</td>
+                    <td>KSh 5,000.00</td>
+                    <td></td>
+                    <td>KSh 15,000.00</td>
+                </tr>
+                
+                <!-- Transactions for June -->
+                <tr>
+                    <td>2024-06-02</td>
+                    <td>2024-06-02</td>
+                    <td>Deposit</td>
+                    <td>DEP0002</td>
+                    <td></td>
+                    <td>KSh 10,000.00</td>
+                    <td>KSh 25,000.00</td>
+                </tr>
+                <tr>
+                    <td>2024-06-20</td>
+                    <td>2024-06-20</td>
+                    <td>Withdrawal</td>
+                    <td>WD0002</td>
+                    <td>KSh 2,500.00</td>
+                    <td></td>
+                    <td>KSh 22,500.00</td>
+                </tr>
+                
+                <!-- Transactions for July -->
+                <tr>
+                    <td>2024-07-10</td>
+                    <td>2024-07-10</td>
+                    <td>Deposit</td>
+                    <td>DEP0003</td>
+                    <td></td>
+                    <td>KSh 15,000.00</td>
+                    <td>KSh 37,500.00</td>
+                </tr>
+                <tr>
+                    <td>2024-07-25</td>
+                    <td>2024-07-25</td>
+                    <td>Withdrawal</td>
+                    <td>WD0003</td>
+                    <td>KSh 7,000.00</td>
+                    <td></td>
+                    <td>KSh 30,500.00</td>
+                </tr>
 
-                <h3>Bank Application</h3>
-                <p>"We created a bank application that enables users to create accounts, deposit, withdraw, and transfer money. Featuring a secure authentication system using JWT, the front-end is built with React, and the back-end is powered by Node.js, Express.js, and MongoDB. This project showcases our expertise in developing secure and efficient financial solutions."</p>
-                <p><a href="https://github.com/MaxLubale/Vaulted_Wealth.git" target="_blank">GitHub Repository</a> 
-                <p><a href="https://vaulted-wealth.onrender.com/" target="_blank">Live Demo</a></p>
+                <!-- Totals Row -->
+                <tr class="total-row">
+                    <td colspan="4"><strong>Total</strong></td>
+                    <td><strong>KSh 14,500.00</strong></td> <!-- Total Debit -->
+                    <td><strong>KSh 45,000.00</strong></td> <!-- Total Credit -->
+                    <td><strong>KSh 30,500.00</strong></td> <!-- Final Balance -->
+                </tr>
+            </tbody>
+        </table>
 
-                <h3>Event Planner Application</h3>
-                <p>"We created a dynamic event planner application, empowering users to effortlessly create, manage, and RSVP to events. Combining Flask for the backend with cutting-edge technologies like React for the frontend, we crafted a responsive user interface. Our solution seamlessly integrated with MongoDB to ensure robust data management and utilized Node.js and Express.js for efficient server-side operations. This project not only honed our skills in full-stack development but also demonstrated our ability to deliver intuitive user experiences and scalable backend solutions."</p>
-                <p><a href="https://github.com/irungudennisnganga/Event-Planner-App-backend.git" target="_blank">GitHub Repository back-end</a> 
-                <p><a href="https://github.com/MainaZaquir/Event-Planner.git" target="_blank">GitHub Repository</a></p>
-            </div>
-            <div class="section">
-    <h2>WORK EXPERIENCE</h2>
-    <h3>Back-End Developer Intern</h3>
-    <p>ABC Software Ltd, Nairobi, April 2024 - July 2024</p>
-    <ul>
-        <li>Assisted in the development of server-side logic using Node.js and Express.js.</li>
-        <li>Worked with MongoDB to design and maintain database schemas.</li>
-        <li>Implemented security and data protection measures for web applications.</li>
-        <li>Participated in the deployment and monitoring of applications on cloud platforms.</li>
-    </ul>
-</div>
-<div class="section">
-    <h2>EDUCATION</h2>
-    <h3>Certificate in Software Development</h3>
-    <p>Moringa School, Nairobi, 2024</p>
-    <h3>High School Certificate</h3>
-    <p>Nyaikuro High School, Kisii, 2019</p>
-</div>
-<footer>
-    <ul class="footer-nav">
-        <li><a href="mailto:hesbonmanyinsa96@gmail.com">Email</a></li>
-        <li><a href="tel:+254743573380">Contact</a></li>
-        <li><a href="https://www.linkedin.com/in/hesbon-angwenyi-58b9412b4" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/hesbonangwenyi606" target="_blank">GitHub</a></li>
-        <li><a href="#">Back to top</a></li>
-    </ul>
-</footer>
+        <!-- Note Section -->
+        <div class="note-section">
+            <p><strong>Note:</strong> Any omission or error in this statement should be promptly advised in writing to the Branch Manager within 30 days from the date of receipt otherwise the account will be presumed to be in order</p>
+            <p>END</p>
+            <p>AN1668720240725105330</p>
+        </div>
+    </div>
 </body>
 </html>
