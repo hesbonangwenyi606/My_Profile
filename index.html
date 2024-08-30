@@ -9,7 +9,8 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4; /* Set a solid background color instead */
+            background: url('https://scontent-mba1-1.xx.fbcdn.net/v/t39.30808-6/454586138_1258024905571507_1961379113621677817_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFtFmPeqd4BdZ-EU-lPK1yiRWk970wc4SZFaT3vTBzhJhxVhqgpgXFTwqYj7lgMBVRNp59xEWeD_3ho88X1E0N_&_nc_ohc=9lUf9eSVxe0Q7kNvgE1xvCm&_nc_ht=scontent-mba1-1.xx&_nc_gid=AOsqE-k77XMVRXkK5qd0-rs&oh=00_AYCBw2L-h-Xh9n2myfaGa8kdDMk4Z1tXx6zPmmWCxui_Lg&oe=66D771C9') no-repeat center center fixed; /* Add background image */
+            background-size: cover; /* Ensure the background image covers the entire viewport */
             color: #6c12a8;
         }
         @page {
@@ -20,16 +21,16 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: #ffffff; /* Ensure the container background is white for readability */
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .profile-picture {
-            width: 100px;
-            height: 100px;
-            border-radius: 100%;
-            margin: 0 auto 80px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Fix the circle radius */
             display: block;
+            margin: 0 auto; /* Center the image horizontally */
         }
         h1, h2, h3 {
             margin: 10px 0;
@@ -170,7 +171,7 @@
 <body>
     <div class="container">
         <div class="left-column">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczOwzd0ZbW_qNHTPiWJ8HoyJB8aMd1RoHBqVZKhZhIc7n4Vg2tnQoa_02RdXjyp6-JjD8wszmd3qzDIY3qVkzKo4AjexwK6-MI_fiKdSJr6Epx-HzmgDNkjgieLN8XQG2PtTYkZzwOOD4KInkYDtT15tIMmA8US0_P4aytS2J3Im82_YG3e8Sz4uaMYy6rAZHMc8FHHdG5StMVMUjJB3Ej3GGCw7TxPfyOJ6bAna-ejEVX5C_dOdpiSnTi0xpK2uuNNz1XgpJ_klVYABCb5Yk9wZlg-MbiKK3vSWRcj6QiF9WslR1WiKlBaGsBWRfX7pShXU6aqtn7s6mgVZyg2Xeb9yseXCLeUBFVa3ygQU7FWeSbubSgYf7_bsdNB_WFuB6uwxkaAxuv5XclNQ6EXMvCICLqJhV4s3KDVcrdmaCzxb0LlkUi1DTC665UoCpG8jvwBnMTsdBMadwkQIwB-85_vbm_XSPS0S3jD5-AjOBoPetp974hXxQD0f0QlNILOGivar10pIRhsbD9v9cbr_f_LWtjXUP4sk9oenUyGksmNI3IAgwg7rh4-NkPt6Eq18Ir1Rm7JFBxR07KzOKoQvMcDI11hZSu5xqcWDx_yKf1L_wFnmABU-xNoVx4Wv5TyAXkwRjM81eyhdCnsvt06azFRRclKClIWUlFCIZsPLGNg1IgR5uhiA5VXI19_05uq8bNyeRfA6q3LqkU_E7Mc0E5RjHOWrvGihhPdbFr0dCiIsgVG872b10sgLWGjy_m8gVBW7KTGuhU3Cu-i2ps3TRMUMEumS8mj8oRsbT7Com4MP9YCAXHM_ELBZTYy1y8ByGmq7IK0S0Xn7aDWxjXCjoJL1lbejz-TNmRu_uDkJsjkrDHcAPA-5rY_vy7HZ__sJdWwdPkuoEvHXmldXnMAJ8ujc_7I0MCn26U9K5-lWO-aFegCan2W2oNzmZhtakIY=w436-h582-s-no?authuser=0" alt="Hesbon Angwenyi" class="profile-picture">
+            <img src="https://scontent-mba1-1.xx.fbcdn.net/v/t39.30808-6/453035116_1253469699360361_1215120191143779960_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEqTb_uulBzoJkxaP6ZC5RM_WN9ODJqw2P9Y304MmrDYwRLGOJiDjOeES8-E7otao5ztBWyZ-F1SkWr62RXuTAS&_nc_ohc=OEPKFg5LYPsQ7kNvgHrFS-8&_nc_ht=scontent-mba1-1.xx&oh=00_AYA0-K0ylRAZCHWOiLq39-y9f4-yo5H36Se-w8F5ScIj_Q&oe=66D77149" alt="Hesbon Angwenyi" class="profile-picture">
             <div class="contact-info">
                 <p>Email: <a href="mailto:hesbonmanyinsa96@gmail.com">hesbonmanyinsa96@gmail.com</a></p>
                 <p>Phone: <a href="tel:+254743573380">+254743573380</a></p>
@@ -277,7 +278,7 @@
         <div class="section">
             <h2>WORK EXPERIENCE</h2>
             <h3>Back-End Developer Intern</h3>
-            <p>ABC Software Ltd, Nairobi, April 2024 - July 2024</p>
+            <p>Techno Brain Company, Nairobi, April 2024 - July 2024</p>
             <ul>
                 <li>Assisted in the development of server-side logic using Node.js and Express.js.</li>
                 <li>Worked with MongoDB to design and maintain database schemas.</li>
